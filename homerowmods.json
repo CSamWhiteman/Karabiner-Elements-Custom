@@ -1,0 +1,61 @@
+{
+    "description": "Map f,j to command and d,k to shift when held",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "f",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to_if_alone": [{ "key_code": "f" }],
+            "to_if_held_down": [
+                {
+                    "key_code": "left_command",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to_if_alone": [{ "key_code": "j" }],
+            "to_if_held_down": [
+                {
+                    "key_code": "left_command",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to_if_alone": [{ "key_code": "d" }],
+            "to_if_held_down": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to_if_alone": [{ "key_code": "k" }],
+            "to_if_held_down": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
